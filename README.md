@@ -1,8 +1,10 @@
 # ActiveListening
 
-Eine minimalistische Web-App für kontextbezogene Meeting-Fragen. Basierend auf dem Prinzip:
+A minimalist web app for context-aware meeting questions. Based on the principle:
 
 > **Ask one question. Then wait. Silence is data.**
+
+🇩🇪 [Deutsche Version](README.de.md)
 
 ## Demo
 
@@ -10,76 +12,76 @@ Eine minimalistische Web-App für kontextbezogene Meeting-Fragen. Basierend auf 
 
 ## Screenshots
 
-### Kartenansicht
+### Card View
 ![Browse View](screenshots/browse-view.png)
 
-### Mobile Ansicht
+### Mobile View
 ![Mobile View](screenshots/mobile-view.png)
 
-### Meeting-Sets verwalten
+### Manage Meeting Sets
 ![Sets View](screenshots/sets-view.png)
 
-### Frage zu Set hinzufügen
+### Add Question to Set
 ![Add to Set Modal](screenshots/add-to-set-modal.png)
 
 ## Features
 
-- **10 Kategorien** mit 43 kuratierten Fragen für effektives Zuhören
-- **Kartenansicht** mit Swipe-Gesten und Keyboard-Navigation
-- **Meeting-Sets** erstellen, speichern und wiederverwenden
-- **Export/Import** von Sets als JSON
-- **Offline-fähig** - funktioniert ohne Internetverbindung
-- **Responsive Design** - optimiert für Desktop und Mobile
+- **10 categories** with 43 curated questions for effective listening
+- **Card view** with swipe gestures and keyboard navigation
+- **Meeting sets** - create, save, and reuse question collections
+- **Export/Import** sets as JSON
+- **Offline capable** - works without internet connection
+- **Responsive design** - optimized for desktop and mobile
 
-## Kategorien
+## Categories
 
-| Kategorie | Beschreibung |
-|-----------|--------------|
-| 🎯 Core | Fragen zum Kern des Themas |
-| 🪞 Mirroring | Spiegeln und Vertiefen |
-| 💭 Space | Raum schaffen für Reflexion |
-| 🚪 Opening | Meeting-Eröffnung |
-| 💬 During | Während der Diskussion |
-| 👥 1-on-1 | Einzelgespräche |
-| 🏛️ Governance | Community & Governance |
-| ⚡ Conflict | Konflikte navigieren |
-| 🔮 Before | Selbst-Check vorher |
-| 📝 After | Selbst-Check nachher |
+| Category | Description |
+|----------|-------------|
+| 🎯 Core | Questions to find what actually matters |
+| 🪞 Mirroring | Deepening and reflecting back |
+| 💭 Space | Creating room for reflection |
+| 🚪 Opening | Meeting openers |
+| 💬 During | During discussion |
+| 👥 1-on-1 | One-on-one conversations |
+| 🏛️ Governance | Community & governance |
+| ⚡ Conflict | Navigating tension |
+| 🔮 Before | Self-check before |
+| 📝 After | Self-check after |
 
-## Technologie
+## Technology
 
 - **Vanilla JavaScript** (ES6 Modules)
-- **Kein Build-Step** - direkt im Browser ausführbar
-- **LocalStorage** für Persistenz
-- **CSS3** mit Flexbox und Animationen
+- **No build step** - runs directly in the browser
+- **LocalStorage** for persistence
+- **CSS3** with Flexbox and animations
 
 ## Installation
 
-Keine Installation nötig. Einfach klonen und öffnen:
+No installation required. Just clone and open:
 
 ```bash
 git clone https://github.com/dkd-dobberkau/ActiveListening.git
 cd ActiveListening
 
-# Option 1: Direkt öffnen
+# Option 1: Open directly
 open index.html
 
-# Option 2: Lokaler Server
+# Option 2: Local server
 python3 -m http.server 8080
-# Öffne http://localhost:8080
+# Open http://localhost:8080
 ```
 
-## Verwendung
+## Usage
 
-1. **Kategorie wählen** - Klicke auf einen oder mehrere Chips
-2. **Fragen durchblättern** - Swipe oder Pfeiltasten
-3. **Zum Set hinzufügen** - Klicke "+ Set" auf einer Frage
-4. **Sets verwalten** - Klicke ☰ oben rechts
+1. **Select category** - Click one or more chips
+2. **Browse questions** - Swipe or use arrow keys
+3. **Add to set** - Click "+ Set" on a question
+4. **Manage sets** - Click ☰ in the top right
 
-## Lizenz
+## License
 
 [MIT](LICENSE)
 
 ## Credits
 
-Entwickelt für [dkd Internet Service GmbH](https://www.dkd.de)
+Developed for [dkd Internet Service GmbH](https://www.dkd.de)
