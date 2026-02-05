@@ -1,0 +1,270 @@
+{
+  "lang": "da",
+  "label": "Dansk",
+  "flag": "🇩🇰",
+  "ui": {
+    "title": "ActiveListening",
+    "setsButton": "Mødesæt",
+    "prevButton": "Forrige",
+    "nextButton": "Næste",
+    "addToSet": "+ Sæt",
+    "newSet": "+ Nyt sæt",
+    "import": "Import",
+    "exportAll": "Eksporter alle",
+    "back": "Tilbage",
+    "cancel": "Annuller",
+    "ok": "OK",
+    "noQuestions": "Ingen spørgsmål i denne kategori",
+    "noSets": "Ingen sæt oprettet endnu",
+    "meetingSets": "Mødesæt",
+    "addToSetTitle": "Tilføj til sæt",
+    "newSetPlaceholder": "Eller opret et nyt sæt...",
+    "newSetTitle": "Nyt sæt",
+    "setNamePlaceholder": "Navn på sæt",
+    "deleteSetTitle": "Slet sæt?",
+    "deleteConfirm": "Denne handling kan ikke fortrydes.",
+    "questionsCount": "spørgsmål",
+    "importSuccess": "sæt(te) importeret",
+    "importError": "Importfejl: Ugyldigt format"
+  },
+  "categories": {
+    "core": {
+      "label": "Kerne",
+      "icon": "🎯"
+    },
+    "mirror": {
+      "label": "Spejling",
+      "icon": "🪞"
+    },
+    "space": {
+      "label": "Rum",
+      "icon": "💭"
+    },
+    "meeting-open": {
+      "label": "Åbning",
+      "icon": "🚪"
+    },
+    "meeting-during": {
+      "label": "Under",
+      "icon": "💬"
+    },
+    "oneonone": {
+      "label": "1-til-1",
+      "icon": "👥"
+    },
+    "governance": {
+      "label": "Forvaltning",
+      "icon": "🏛️"
+    },
+    "conflict": {
+      "label": "Konflikt",
+      "icon": "⚡"
+    },
+    "self-before": {
+      "label": "Før",
+      "icon": "🔮"
+    },
+    "self-after": {
+      "label": "Efter",
+      "icon": "📝"
+    }
+  },
+  "questions": {
+    "core-1": {
+      "question": "Hvorfor er det vigtigt for dig?",
+      "explanation": "Fremhæver personlig motivation og følelsesmæssige indsatser ud over det rationelle argument."
+    },
+    "core-2": {
+      "question": "Hvad er kerneproblemet her?",
+      "explanation": "Tvinger til prioritering. Skærer gennem symptomer til de grundlæggende årsager."
+    },
+    "core-3": {
+      "question": "Hvis du kun kunne løse én ting, hvad skulle det så være?",
+      "explanation": "Afslører den sande prioritering, når alting føles presserende."
+    },
+    "core-4": {
+      "question": "Hvad ville ændre sig, hvis vi ikke gjorde noget?",
+      "explanation": "Afprøver, hvor meget det haster, og afklarer de reelle konsekvenser i forhold til de formodede."
+    },
+    "core-5": {
+      "question": "Hvad er du mest bekymret for?",
+      "explanation": "Åbner den følelsesmæssige dimension af en tilsyneladende rationel diskussion."
+    },
+    "core-6": {
+      "question": "Hvordan ser succes ud for dig her?",
+      "explanation": "Afstem forventninger, før du kaster dig ud i løsninger."
+    },
+    "mirror-1": {
+      "question": "Det, jeg hører, er [X]. Er det rigtigt?",
+      "explanation": "Spejler tilbage. Viser, at du lyttede. Lader dem korrigere eller gå dybere."
+    },
+    "mirror-2": {
+      "question": "Du sagde [X]. Fortæl mig mere om det.",
+      "explanation": "Åbner en dør, som de måske kun har åbnet. Ingen dom, bare nysgerrighed."
+    },
+    "mirror-3": {
+      "question": "Hvad mener du med [specifikt ord]?",
+      "explanation": "Fanger antagelser. Ord som \"fair\", \"respekt\", \"kvalitet\" betyder forskellige ting for forskellige mennesker."
+    },
+    "mirror-4": {
+      "question": "Kan du give mig et eksempel?",
+      "explanation": "Bevæger sig fra det abstrakte til det konkrete. Afslører, hvad nogen faktisk har oplevet."
+    },
+    "mirror-5": {
+      "question": "Hvordan faldt det i god jord hos dig?",
+      "explanation": "Inviterer til følelsesmæssig respons uden at tvinge den frem."
+    },
+    "mirror-6": {
+      "question": "Hvad er det, du ikke har sagt endnu?",
+      "explanation": "Skaber tilladelse til det usagte. Brug det med tillid og omtanke."
+    },
+    "space-1": {
+      "question": "[Stilhed - 5 sekunder]",
+      "explanation": "Lad den anden person bearbejde. Mange mennesker har brug for en pause, før de deler noget ægte."
+    },
+    "space-2": {
+      "question": "Tag dig god tid.",
+      "explanation": "Fjerner tidspres. Signalerer ægte interesse."
+    },
+    "space-3": {
+      "question": "Jeg vil gerne forstå det bedre.",
+      "explanation": "Positionerer dig som lærende, ikke dømmende. Afvæbner defensivitet."
+    },
+    "space-4": {
+      "question": "Det lyder vigtigt. Sig mere.",
+      "explanation": "Validerer uden at evaluere. Åbner døren på vid gab."
+    },
+    "space-5": {
+      "question": "Jeg bemærkede, at du holdt en pause.",
+      "explanation": "Henleder forsigtigt opmærksomheden på et nonverbalt signal. Brug det med varme."
+    },
+    "space-6": {
+      "question": "Lad mig sidde med det et øjeblik.",
+      "explanation": "Modellerer reflekterende adfærd. Viser, at det har værdi at tænke, før man reagerer."
+    },
+    "meeting-open-1": {
+      "question": "Hvad er den ene ting, vi skal forlade dette rum med?",
+      "explanation": "Skaber fælles fokus. Forhindrer afdrift."
+    },
+    "meeting-open-2": {
+      "question": "Hvad har du brug for fra mig i dag?",
+      "explanation": "Skifter fra at præsentere til at tjene. Sætter tonen for samarbejde."
+    },
+    "meeting-open-3": {
+      "question": "Hvor sidder vi fast?",
+      "explanation": "Springer statusopdateringer over. Går direkte til det, der giver værdi."
+    },
+    "meeting-during-1": {
+      "question": "Hvem har vi ikke hørt fra endnu?",
+      "explanation": "Skaber plads til mere stille stemmer. Modellerer inkluderende lederskab."
+    },
+    "meeting-during-2": {
+      "question": "Løser vi det rigtige problem?",
+      "explanation": "Rekalibrerer, når diskussionen glider over i løsningsmodus for tidligt."
+    },
+    "meeting-during-3": {
+      "question": "Hvad antager vi her?",
+      "explanation": "Afdækker blinde vinkler og gruppetænkning."
+    },
+    "meeting-during-4": {
+      "question": "Hvad ville vi gøre, hvis vi havde den halve tid?",
+      "explanation": "Tvinger til prioritering og afslører, hvad der virkelig er vigtigt."
+    },
+    "oneonone-1": {
+      "question": "Hvad giver dig energi lige nu?",
+      "explanation": "Begynder positivt. Afslører, hvad der motiverer denne person."
+    },
+    "oneonone-2": {
+      "question": "Hvad dræner dig lige nu?",
+      "explanation": "Sammen med ovenstående: viser det fulde billede uden at lede."
+    },
+    "oneonone-3": {
+      "question": "Hvordan ser støtte fra mig ud for dig?",
+      "explanation": "Forhindrer, at man antager, at man ved, hvad de har brug for."
+    },
+    "oneonone-4": {
+      "question": "Er der noget, vi hele tiden undgår?",
+      "explanation": "Åbner døren til vanskelige emner med delt ejerskab."
+    },
+    "oneonone-5": {
+      "question": "Hvad ville du gøre anderledes, hvis det var helt op til dig?",
+      "explanation": "Afslører skjulte initiativer, ejerskab og tillidsniveauer."
+    },
+    "governance-1": {
+      "question": "Hvad ville samfundet sige til denne beslutning?",
+      "explanation": "Skifter fra intern logik til ekstern påvirkning."
+    },
+    "governance-2": {
+      "question": "Hvad er bekymringen bag indvendingen?",
+      "explanation": "Bevæger sig forbi positionel uenighed til underliggende behov."
+    },
+    "governance-3": {
+      "question": "Hvor er vi enige? Lad os begynde der.",
+      "explanation": "Finder fælles fodslag i polariserede diskussioner."
+    },
+    "governance-4": {
+      "question": "Hvad skal vi se for at skifte mening?",
+      "explanation": "Introducerer intellektuel ydmyghed og testbare kriterier."
+    },
+    "governance-5": {
+      "question": "Er det en beslutning eller en diskussion?",
+      "explanation": "Afklarer forventninger. Forhindrer frustration på begge sider."
+    },
+    "governance-6": {
+      "question": "Hvem skal ellers være med i denne samtale?",
+      "explanation": "Tjekker, om der mangler perspektiver, før du går i gang."
+    },
+    "conflict-1": {
+      "question": "Hjælp mig med at forstå, hvor du kommer fra.",
+      "explanation": "Ikke-konfronterende. Åbner for dialog, når holdninger stivner."
+    },
+    "conflict-2": {
+      "question": "Hvad skal der ske, for at det kan fungere for os begge?",
+      "explanation": "Skifter fra vind/tab til fælles problemløsning."
+    },
+    "conflict-3": {
+      "question": "Hvad er der egentlig på spil for dig her?",
+      "explanation": "Går under positionen til interessen."
+    },
+    "conflict-4": {
+      "question": "Jeg fornemmer, at der er mere her. Læser jeg det rigtigt?",
+      "explanation": "Navngiver forsigtigt elefanten. Giver tilladelse til at være ærlig."
+    },
+    "conflict-5": {
+      "question": "Hvad skal der til for at genopbygge tilliden her?",
+      "explanation": "Fremadskuende. Bevæger sig fra skyld til reparation."
+    },
+    "conflict-6": {
+      "question": "Kan vi stoppe op og tjekke: Er vi stadig på samme side?",
+      "explanation": "Genskaber dynamikken, når samtalen bliver konfliktfyldt."
+    },
+    "self-before-1": {
+      "question": "Hvad prøver jeg at opnå her?",
+      "explanation": "Afklarer din hensigt, før du går ind."
+    },
+    "self-before-2": {
+      "question": "Hvad har den anden person brug for?",
+      "explanation": "Skifter perspektiv. Gør dig klar til at lytte."
+    },
+    "self-before-3": {
+      "question": "Hvor er det sandsynligt, at jeg springer for hurtigt ud i det?",
+      "explanation": "Forudgående bevidsthed om dit mønster. Forbereder pausen."
+    },
+    "self-after-1": {
+      "question": "Hvor lyttede jeg godt?",
+      "explanation": "Forstærker positive mønstre."
+    },
+    "self-after-2": {
+      "question": "Hvor fyldte jeg stilheden ud?",
+      "explanation": "Ærligt tjek uden at dømme. Data til loggen."
+    },
+    "self-after-3": {
+      "question": "Hvad lærte jeg, som overraskede mig?",
+      "explanation": "Indfanger indsigt. Belønner nysgerrighed."
+    },
+    "self-after-4": {
+      "question": "Hvilket spørgsmål ville jeg ønske, jeg havde stillet?",
+      "explanation": "Opbygger dit repertoire til næste gang."
+    }
+  }
+}

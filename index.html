@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,15 @@
 <body>
   <div id="app">
     <header class="header">
-      <h1>ActiveListening</h1>
-      <button id="btn-sets" class="btn-icon" aria-label="Meeting Sets">☰</button>
+      <h1 id="app-title">ActiveListening</h1>
+      <div class="header-actions">
+        <div id="lang-switcher" class="lang-switcher"></div>
+        <button id="btn-sets" class="btn-icon" aria-label="Meeting Sets">☰</button>
+      </div>
     </header>
 
     <main id="view-browse" class="view active">
-      <nav id="categories" class="categories" aria-label="Kategorien"></nav>
+      <nav id="categories" class="categories" aria-label="Categories"></nav>
 
       <div class="card-container">
         <div id="card" class="card">
@@ -26,22 +29,22 @@
       </div>
 
       <div class="navigation">
-        <button id="btn-prev" class="btn-nav" aria-label="Vorherige">←</button>
+        <button id="btn-prev" class="btn-nav" aria-label="Previous">←</button>
         <div id="dots" class="dots"></div>
-        <button id="btn-next" class="btn-nav" aria-label="Nächste">→</button>
+        <button id="btn-next" class="btn-nav" aria-label="Next">→</button>
       </div>
     </main>
 
     <aside id="view-sets" class="view">
       <header class="sets-header">
-        <button id="btn-back" class="btn-icon" aria-label="Zurück">←</button>
-        <h2>Meeting-Sets</h2>
+        <button id="btn-back" class="btn-icon" aria-label="Back">←</button>
+        <h2 id="sets-title">Meeting Sets</h2>
       </header>
       <div id="sets-list" class="sets-list"></div>
-      <button id="btn-new-set" class="btn-primary">+ Neues Set</button>
+      <button id="btn-new-set" class="btn-primary">+ New Set</button>
       <div class="sets-actions">
         <button id="btn-import" class="btn-secondary">⬆ Import</button>
-        <button id="btn-export-all" class="btn-secondary">⬇ Alle Export</button>
+        <button id="btn-export-all" class="btn-secondary">⬇ Export All</button>
       </div>
       <input type="file" id="file-import" accept=".json" hidden>
     </aside>
@@ -51,7 +54,7 @@
         <h3 id="modal-title"></h3>
         <div id="modal-body"></div>
         <div class="modal-actions">
-          <button id="modal-cancel" class="btn-secondary">Abbrechen</button>
+          <button id="modal-cancel" class="btn-secondary">Cancel</button>
           <button id="modal-confirm" class="btn-primary">OK</button>
         </div>
       </div>

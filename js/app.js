@@ -1,4 +1,4 @@
-import { CATEGORIES, QUESTIONS } from './questions.js';
+import { i18n } from './i18n.js';
 import { storage } from './storage.js';
 
 // State
@@ -12,6 +12,8 @@ let state = {
 
 // DOM Elements
 const elements = {
+  appTitle: document.getElementById('app-title'),
+  langSwitcher: document.getElementById('lang-switcher'),
   categoriesNav: document.getElementById('categories'),
   card: document.getElementById('card'),
   cardQuestion: document.querySelector('.card-question'),
@@ -28,6 +30,7 @@ const elements = {
   fileImport: document.getElementById('file-import'),
   viewBrowse: document.getElementById('view-browse'),
   viewSets: document.getElementById('view-sets'),
+  setsTitle: document.getElementById('sets-title'),
   setsList: document.getElementById('sets-list'),
   modal: document.getElementById('modal'),
   modalTitle: document.getElementById('modal-title'),
@@ -36,23 +39,75 @@ const elements = {
   modalConfirm: document.getElementById('modal-confirm')
 };
 
+// Render language switcher
+function renderLangSwitcher() {
+  const locales = i18n.getLocales();
+  const currentLocale = i18n.getLocale();
+  const flags = { en: '🇬🇧', de: '🇩🇪', da: '🇩🇰' };
+
+  elements.langSwitcher.innerHTML = locales.map(locale => `
+    <button class="lang-btn ${locale === currentLocale ? 'active' : ''}"
+            data-lang="${locale}"
+            title="${locale.toUpperCase()}">
+      ${flags[locale] || locale.toUpperCase()}
+    </button>
+  `).join('');
+}
+
+// Update all UI text with translations
+function updateUIText() {
+  // Update HTML lang attribute
+  document.documentElement.lang = i18n.getLocale();
+
+  // Header
+  elements.btnSets.setAttribute('aria-label', i18n.t('ui.setsButton'));
+
+  // Navigation
+  elements.btnPrev.setAttribute('aria-label', i18n.t('ui.prevButton'));
+  elements.btnNext.setAttribute('aria-label', i18n.t('ui.nextButton'));
+
+  // Add to set button
+  elements.btnAddToSet.textContent = i18n.t('ui.addToSet');
+
+  // Sets view
+  elements.setsTitle.textContent = i18n.t('ui.meetingSets');
+  elements.btnBack.setAttribute('aria-label', i18n.t('ui.back'));
+  elements.btnNewSet.textContent = i18n.t('ui.newSet');
+  elements.btnImport.innerHTML = `⬆ ${i18n.t('ui.import')}`;
+  elements.btnExportAll.innerHTML = `⬇ ${i18n.t('ui.exportAll')}`;
+
+  // Modal buttons
+  elements.modalCancel.textContent = i18n.t('ui.cancel');
+  elements.modalConfirm.textContent = i18n.t('ui.ok');
+
+  // Categories nav aria-label
+  elements.categoriesNav.setAttribute('aria-label', i18n.t('ui.categories') || 'Categories');
+}
+
 // Filter questions by active categories
 function filterQuestions() {
   if (state.viewingSetId) {
     const set = storage.getSet(state.viewingSetId);
-    state.filteredQuestions = set ?
-      QUESTIONS.filter(q => set.questionIds.includes(q.id)) : [];
+    if (set) {
+      state.filteredQuestions = set.questionIds
+        .map(id => {
+          const q = i18n.getQuestion(id);
+          return q ? { id, ...q, category: id.replace(/-\d+$/, '') } : null;
+        })
+        .filter(Boolean);
+    } else {
+      state.filteredQuestions = [];
+    }
   } else {
-    state.filteredQuestions = QUESTIONS.filter(q =>
-      state.activeCategories.includes(q.category)
-    );
+    state.filteredQuestions = i18n.getQuestionsByCategories(state.activeCategories);
   }
   state.currentIndex = 0;
 }
 
 // Render category chips
 function renderCategories() {
-  elements.categoriesNav.innerHTML = CATEGORIES.map(cat => `
+  const categories = i18n.getCategories();
+  elements.categoriesNav.innerHTML = categories.map(cat => `
     <button class="chip ${state.activeCategories.includes(cat.id) ? 'active' : ''}"
             data-category="${cat.id}">
       ${cat.icon} ${cat.label}
@@ -65,7 +120,7 @@ function renderCard(direction = null) {
   const question = state.filteredQuestions[state.currentIndex];
 
   if (!question) {
-    elements.cardQuestion.textContent = 'Keine Fragen in dieser Kategorie';
+    elements.cardQuestion.textContent = i18n.t('ui.noQuestions');
     elements.cardExplanation.textContent = '';
     elements.btnAddToSet.classList.add('hidden');
     return;
@@ -100,7 +155,6 @@ function renderDots() {
       `<span class="dot ${i === state.currentIndex ? 'active' : ''}"></span>`
     ).join('');
   } else {
-    // Show subset of dots around current position
     let start = Math.max(0, state.currentIndex - 3);
     let end = Math.min(total, start + maxDots);
     if (end - start < maxDots) start = Math.max(0, end - maxDots);
@@ -160,7 +214,7 @@ function renderSetsList() {
   const sets = storage.getSets();
 
   if (sets.length === 0) {
-    elements.setsList.innerHTML = '<p style="color: var(--color-text-muted); text-align: center; padding: 2rem;">Noch keine Sets erstellt</p>';
+    elements.setsList.innerHTML = `<p style="color: var(--color-text-muted); text-align: center; padding: 2rem;">${i18n.t('ui.noSets')}</p>`;
     return;
   }
 
@@ -169,12 +223,12 @@ function renderSetsList() {
       <div class="set-item-header">
         <span class="set-item-name">📋 ${set.name}</span>
         <div class="set-item-actions">
-          <button class="btn-secondary btn-play" title="Öffnen">▶</button>
-          <button class="btn-secondary btn-export" title="Export">⬇</button>
-          <button class="btn-secondary btn-delete" title="Löschen">✕</button>
+          <button class="btn-secondary btn-play" title="▶">▶</button>
+          <button class="btn-secondary btn-export" title="⬇">⬇</button>
+          <button class="btn-secondary btn-delete" title="✕">✕</button>
         </div>
       </div>
-      <div class="set-item-meta">${set.questionIds.length} Fragen · ${set.created}</div>
+      <div class="set-item-meta">${set.questionIds.length} ${i18n.t('ui.questionsCount')} · ${set.created}</div>
     </div>
   `).join('');
 }
@@ -219,13 +273,12 @@ function showAddToSetModal() {
     html += '</div>';
   }
 
-  html += '<input type="text" id="new-set-name" placeholder="Oder neues Set erstellen...">';
+  html += `<input type="text" id="new-set-name" placeholder="${i18n.t('ui.newSetPlaceholder')}">`;
 
-  showModal('Zu Set hinzufügen', html, () => {
+  showModal(i18n.t('ui.addToSetTitle'), html, () => {
     const newSetName = document.getElementById('new-set-name').value.trim();
     const checkboxes = elements.modalBody.querySelectorAll('input[type="checkbox"]');
 
-    // Handle existing sets
     checkboxes.forEach(cb => {
       if (cb.checked) {
         storage.addQuestionToSet(cb.value, question.id);
@@ -234,7 +287,6 @@ function showAddToSetModal() {
       }
     });
 
-    // Create new set if name provided
     if (newSetName) {
       const newSet = storage.createSet(newSetName);
       storage.addQuestionToSet(newSet.id, question.id);
@@ -276,8 +328,29 @@ function handleTouchEnd(e) {
   }
 }
 
+// Handle language change
+async function handleLanguageChange(locale) {
+  await i18n.setLocale(locale);
+  renderLangSwitcher();
+  updateUIText();
+  filterQuestions();
+  renderCategories();
+  renderCard();
+  if (state.currentView === 'sets') {
+    renderSetsList();
+  }
+}
+
 // Event Listeners
 function initEventListeners() {
+  // Language switcher
+  elements.langSwitcher.addEventListener('click', (e) => {
+    const btn = e.target.closest('.lang-btn');
+    if (btn) {
+      handleLanguageChange(btn.dataset.lang);
+    }
+  });
+
   // Category selection
   elements.categoriesNav.addEventListener('click', (e) => {
     const chip = e.target.closest('.chip');
@@ -316,7 +389,7 @@ function initEventListeners() {
 
   // New set
   elements.btnNewSet.addEventListener('click', () => {
-    showModal('Neues Set', '<input type="text" id="new-set-name" placeholder="Name des Sets">', () => {
+    showModal(i18n.t('ui.newSetTitle'), `<input type="text" id="new-set-name" placeholder="${i18n.t('ui.setNamePlaceholder')}">`, () => {
       const name = document.getElementById('new-set-name').value.trim();
       if (name) {
         storage.createSet(name);
@@ -335,14 +408,15 @@ function initEventListeners() {
     if (e.target.closest('.btn-play')) {
       state.viewingSetId = setId;
       filterQuestions();
-      elements.categoriesNav.innerHTML = `<span class="chip active">📋 ${storage.getSet(setId).name}</span>`;
+      const set = storage.getSet(setId);
+      elements.categoriesNav.innerHTML = `<span class="chip active">📋 ${set.name}</span>`;
       renderCard();
       showView('browse');
     } else if (e.target.closest('.btn-export')) {
       const content = storage.exportSets([setId]);
       downloadJson(content, `set-${setId}.json`);
     } else if (e.target.closest('.btn-delete')) {
-      showModal('Set löschen?', '<p>Diese Aktion kann nicht rückgängig gemacht werden.</p>', () => {
+      showModal(i18n.t('ui.deleteSetTitle'), `<p>${i18n.t('ui.deleteConfirm')}</p>`, () => {
         storage.deleteSet(setId);
         renderSetsList();
         hideModal();
@@ -369,9 +443,9 @@ function initEventListeners() {
       try {
         const count = storage.importSets(event.target.result);
         renderSetsList();
-        alert(`${count} Set(s) importiert`);
+        alert(`${count} ${i18n.t('ui.importSuccess')}`);
       } catch (err) {
-        alert('Fehler beim Import: Ungültiges Format');
+        alert(i18n.t('ui.importError'));
       }
     };
     reader.readAsText(file);
@@ -390,7 +464,10 @@ function initEventListeners() {
 }
 
 // Initialize
-function init() {
+async function init() {
+  await i18n.init();
+  renderLangSwitcher();
+  updateUIText();
   filterQuestions();
   renderCategories();
   renderCard();

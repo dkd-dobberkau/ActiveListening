@@ -1,0 +1,270 @@
+{
+  "lang": "de",
+  "label": "Deutsch",
+  "flag": "🇩🇪",
+  "ui": {
+    "title": "ActiveListening",
+    "setsButton": "Meeting-Sets",
+    "prevButton": "Vorherige",
+    "nextButton": "Weiter",
+    "addToSet": "+ Set",
+    "newSet": "+ Neues Set",
+    "import": "Importieren",
+    "exportAll": "Alle exportieren",
+    "back": "Zurück",
+    "cancel": "Abbrechen",
+    "ok": "OK",
+    "noQuestions": "Keine Fragen in dieser Kategorie",
+    "noSets": "Noch keine Sets erstellt",
+    "meetingSets": "Meeting-Sets",
+    "addToSetTitle": "Zum Set hinzufügen",
+    "newSetPlaceholder": "Oder erstellen Sie ein neues Set...",
+    "newSetTitle": "Neues Set",
+    "setNamePlaceholder": "Name des Sets",
+    "deleteSetTitle": "Set löschen?",
+    "deleteConfirm": "Diese Aktion kann nicht rückgängig gemacht werden.",
+    "questionsCount": "Fragen",
+    "importSuccess": "Set(s) importiert",
+    "importError": "Importfehler: Ungültiges Format"
+  },
+  "categories": {
+    "core": {
+      "label": "Kern",
+      "icon": "🎯"
+    },
+    "mirror": {
+      "label": "Spiegelung",
+      "icon": "🪞"
+    },
+    "space": {
+      "label": "Raum",
+      "icon": "💭"
+    },
+    "meeting-open": {
+      "label": "Eröffnung",
+      "icon": "🚪"
+    },
+    "meeting-during": {
+      "label": "Während",
+      "icon": "💬"
+    },
+    "oneonone": {
+      "label": "1-zu-1",
+      "icon": "👥"
+    },
+    "governance": {
+      "label": "Governance",
+      "icon": "🏛️"
+    },
+    "conflict": {
+      "label": "Konflikt",
+      "icon": "⚡"
+    },
+    "self-before": {
+      "label": "Vorher",
+      "icon": "🔮"
+    },
+    "self-after": {
+      "label": "Nachher",
+      "icon": "📝"
+    }
+  },
+  "questions": {
+    "core-1": {
+      "question": "Warum ist das für Sie wichtig?",
+      "explanation": "Zeigt die persönliche Motivation und den emotionalen Einsatz jenseits des rationalen Arguments."
+    },
+    "core-2": {
+      "question": "Worum geht es hier im Kern?",
+      "explanation": "Erzwingt eine Prioritätensetzung. Durchbricht die Symptome und findet die Ursachen."
+    },
+    "core-3": {
+      "question": "Wenn Sie nur eine Sache lösen könnten, welche wäre das?",
+      "explanation": "Zeigt die wahren Prioritäten auf, wenn sich alles dringend anfühlt."
+    },
+    "core-4": {
+      "question": "Was würde sich ändern, wenn wir nichts tun?",
+      "explanation": "Prüft die Dringlichkeit und klärt die tatsächlichen Folgen im Vergleich zu den angenommenen Folgen."
+    },
+    "core-5": {
+      "question": "Worüber machen Sie sich am meisten Sorgen?",
+      "explanation": "Eröffnet die emotionale Dimension einer scheinbar rationalen Diskussion."
+    },
+    "core-6": {
+      "question": "Wie sieht hier der Erfolg für Sie aus?",
+      "explanation": "Richtet die Erwartungen aus, bevor er sich auf Lösungen stürzt."
+    },
+    "mirror-1": {
+      "question": "Was ich höre, ist [X]. Ist das richtig?",
+      "explanation": "Spiegelt zurück. Zeigt, dass man zugehört hat. Lässt sie korrigieren oder tiefer gehen."
+    },
+    "mirror-2": {
+      "question": "Sie sagten [X]. Erzählen Sie mir mehr darüber.",
+      "explanation": "Öffnet eine Tür, die sie vielleicht nur angeknackt haben. Kein Urteil, nur Neugierde."
+    },
+    "mirror-3": {
+      "question": "Was meinen Sie mit [bestimmtes Wort]?",
+      "explanation": "Fängt Annahmen auf. Worte wie \"fair\", \"Respekt\", \"Qualität\" bedeuten für verschiedene Menschen unterschiedliche Dinge."
+    },
+    "mirror-4": {
+      "question": "Können Sie mir ein Beispiel nennen?",
+      "explanation": "Bewegt sich vom Abstrakten zum Konkreten. Zeigt, was jemand tatsächlich erlebt hat."
+    },
+    "mirror-5": {
+      "question": "Wie ist das bei Ihnen angekommen?",
+      "explanation": "Lädt zu emotionalen Reaktionen ein, ohne sie zu erzwingen."
+    },
+    "mirror-6": {
+      "question": "Was ist der Teil, den Sie noch nicht gesagt haben?",
+      "explanation": "Schafft Erlaubnis für das Ungesagte. Verwenden Sie es mit Vertrauen und Sorgfalt."
+    },
+    "space-1": {
+      "question": "[Stille - 5 Sekunden]",
+      "explanation": "Lasst die andere Person verarbeiten. Viele Menschen brauchen einen Moment, bevor sie etwas wirklich mitteilen."
+    },
+    "space-2": {
+      "question": "Nehmen Sie sich Zeit.",
+      "explanation": "Nimmt den Zeitdruck. Signalisiert echtes Interesse."
+    },
+    "space-3": {
+      "question": "Ich würde das gerne besser verstehen.",
+      "explanation": "Positioniert Sie als Lernenden, nicht als Richter. Entwaffnet Abwehrhaltungen."
+    },
+    "space-4": {
+      "question": "Das klingt wichtig. Sagen Sie mehr.",
+      "explanation": "Validiert, ohne zu bewerten. Öffnet die Tür weiter."
+    },
+    "space-5": {
+      "question": "Ich stelle fest, dass Sie dort eine Pause gemacht haben.",
+      "explanation": "Lenkt die Aufmerksamkeit sanft auf einen nonverbalen Hinweis. Mit Wärme verwenden."
+    },
+    "space-6": {
+      "question": "Lassen Sie mich das einen Moment lang bedenken.",
+      "explanation": "Modelliert reflektiertes Verhalten. Zeigt, dass Nachdenken vor dem Reagieren wichtig ist."
+    },
+    "meeting-open-1": {
+      "question": "Was ist die eine Sache, mit der wir diesen Raum verlassen sollten?",
+      "explanation": "Schafft einen gemeinsamen Fokus. Verhindert das Abdriften."
+    },
+    "meeting-open-2": {
+      "question": "Was brauchen Sie heute von mir?",
+      "explanation": "Geht vom Präsentieren zum Dienen über. Gibt den Ton für die Zusammenarbeit an."
+    },
+    "meeting-open-3": {
+      "question": "Wo sitzen wir fest?",
+      "explanation": "Überspringt Statusaktualisierungen. Geht direkt dorthin, wo ein Mehrwert geschaffen wird."
+    },
+    "meeting-during-1": {
+      "question": "Von wem haben wir noch nichts gehört?",
+      "explanation": "Schafft Raum für leisere Stimmen. Vorbild für integrative Führung."
+    },
+    "meeting-during-2": {
+      "question": "Lösen wir das richtige Problem?",
+      "explanation": "Rekalibriert, wenn die Diskussion zu früh in den Lösungsmodus abdriftet."
+    },
+    "meeting-during-3": {
+      "question": "Wovon gehen wir hier aus?",
+      "explanation": "Zeigt blinde Flecken und Gruppendenken auf."
+    },
+    "meeting-during-4": {
+      "question": "Was würden wir tun, wenn wir nur halb so viel Zeit hätten?",
+      "explanation": "Zwingt zur Prioritätensetzung und zeigt, was wirklich wichtig ist."
+    },
+    "oneonone-1": {
+      "question": "Was gibt Ihnen im Moment die nötige Energie?",
+      "explanation": "Beginnt positiv. Zeigt auf, was diese Person motiviert."
+    },
+    "oneonone-2": {
+      "question": "Was belastet Sie im Moment?",
+      "explanation": "Gepaart mit dem oben genannten: zeigt das vollständige Bild ohne Vorspann."
+    },
+    "oneonone-3": {
+      "question": "Wie sieht die Unterstützung durch mich für Sie aus?",
+      "explanation": "Das verhindert, dass man annimmt, man wisse, was sie brauchen."
+    },
+    "oneonone-4": {
+      "question": "Gibt es etwas, dem wir ausweichen?",
+      "explanation": "Öffnet die Tür für schwierige Themen mit gemeinsamem Eigentum."
+    },
+    "oneonone-5": {
+      "question": "Was würden Sie anders machen, wenn es allein Ihre Entscheidung wäre?",
+      "explanation": "Zeigt verborgene Initiative, Eigenverantwortung und Vertrauen auf."
+    },
+    "governance-1": {
+      "question": "Was würde die Gemeinschaft zu dieser Entscheidung sagen?",
+      "explanation": "Verlagerung von der internen Logik zur externen Wirkung."
+    },
+    "governance-2": {
+      "question": "Was ist das Anliegen hinter dem Einwand?",
+      "explanation": "Er geht über Meinungsverschiedenheiten in Bezug auf die Position hinaus und konzentriert sich auf die zugrunde liegenden Bedürfnisse."
+    },
+    "governance-3": {
+      "question": "Wo sind wir uns einig? Fangen wir dort an.",
+      "explanation": "Findet eine gemeinsame Basis in polarisierten Diskussionen."
+    },
+    "governance-4": {
+      "question": "Was müssten wir sehen, um unsere Meinung zu ändern?",
+      "explanation": "Einführung von intellektueller Bescheidenheit und überprüfbaren Kriterien."
+    },
+    "governance-5": {
+      "question": "Ist dies eine Entscheidung oder eine Diskussion?",
+      "explanation": "Klärt die Erwartungen. Verhindert Frustration auf beiden Seiten."
+    },
+    "governance-6": {
+      "question": "Wer sollte noch an diesem Gespräch teilnehmen?",
+      "explanation": "Überprüft, ob Perspektiven fehlen, bevor die Daten übermittelt werden."
+    },
+    "conflict-1": {
+      "question": "Helfen Sie mir zu verstehen, worauf Sie hinauswollen.",
+      "explanation": "Nicht konfrontativ. Öffnet den Dialog, wenn sich die Positionen verhärten."
+    },
+    "conflict-2": {
+      "question": "Was müsste geschehen, damit das für uns beide funktioniert?",
+      "explanation": "Verlagerung von Gewinn/Verlust auf gemeinsame Problemlösung."
+    },
+    "conflict-3": {
+      "question": "Was steht hier für Sie wirklich auf dem Spiel?",
+      "explanation": "Geht unterhalb der Position auf das Interesse ein."
+    },
+    "conflict-4": {
+      "question": "Ich spüre, dass es hier noch mehr gibt. Sehe ich das richtig?",
+      "explanation": "Benennt sanft den Elefanten. Gibt die Erlaubnis, ehrlich zu sein."
+    },
+    "conflict-5": {
+      "question": "Was wäre nötig, um hier wieder Vertrauen zu schaffen?",
+      "explanation": "Vorausschauend. Weg von der Schuldzuweisung hin zur Reparatur."
+    },
+    "conflict-6": {
+      "question": "Können wir innehalten und prüfen: Stehen wir noch auf der gleichen Seite?",
+      "explanation": "Stellt die Dynamik wieder her, wenn das Gespräch in eine kontroverse Richtung geht."
+    },
+    "self-before-1": {
+      "question": "Was will ich hier erreichen?",
+      "explanation": "Verdeutlicht Ihre Absicht, bevor Sie eintreten."
+    },
+    "self-before-2": {
+      "question": "Was braucht die andere Person davon?",
+      "explanation": "Verändert die Perspektive. Bereitet Sie auf das Zuhören vor."
+    },
+    "self-before-3": {
+      "question": "Wo werde ich wahrscheinlich zu schnell einsteigen?",
+      "explanation": "Vorab-Bewusstsein für Ihr Muster. Bereitet das Innehalten vor."
+    },
+    "self-after-1": {
+      "question": "Wo habe ich gut zugehört?",
+      "explanation": "Verstärkt positive Muster."
+    },
+    "self-after-2": {
+      "question": "Wo habe ich die Stille gefüllt?",
+      "explanation": "Ehrliche Prüfung ohne Urteil. Daten für das Protokoll."
+    },
+    "self-after-3": {
+      "question": "Was habe ich gelernt, das mich überrascht hat?",
+      "explanation": "Erfasst Einblicke. Belohnt die Neugierde."
+    },
+    "self-after-4": {
+      "question": "Welche Frage hätte ich gerne gestellt?",
+      "explanation": "Erweitert Ihr Repertoire für das nächste Mal."
+    }
+  }
+}

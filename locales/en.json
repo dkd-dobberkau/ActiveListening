@@ -1,0 +1,240 @@
+{
+  "lang": "en",
+  "label": "English",
+  "flag": "🇬🇧",
+  "ui": {
+    "title": "ActiveListening",
+    "setsButton": "Meeting Sets",
+    "prevButton": "Previous",
+    "nextButton": "Next",
+    "addToSet": "+ Set",
+    "newSet": "+ New Set",
+    "import": "Import",
+    "exportAll": "Export All",
+    "back": "Back",
+    "cancel": "Cancel",
+    "ok": "OK",
+    "noQuestions": "No questions in this category",
+    "noSets": "No sets created yet",
+    "meetingSets": "Meeting Sets",
+    "addToSetTitle": "Add to Set",
+    "newSetPlaceholder": "Or create new set...",
+    "newSetTitle": "New Set",
+    "setNamePlaceholder": "Set name",
+    "deleteSetTitle": "Delete set?",
+    "deleteConfirm": "This action cannot be undone.",
+    "questionsCount": "questions",
+    "importSuccess": "set(s) imported",
+    "importError": "Import error: Invalid format"
+  },
+  "categories": {
+    "core": { "label": "Core", "icon": "🎯" },
+    "mirror": { "label": "Mirroring", "icon": "🪞" },
+    "space": { "label": "Space", "icon": "💭" },
+    "meeting-open": { "label": "Opening", "icon": "🚪" },
+    "meeting-during": { "label": "During", "icon": "💬" },
+    "oneonone": { "label": "1-on-1", "icon": "👥" },
+    "governance": { "label": "Governance", "icon": "🏛️" },
+    "conflict": { "label": "Conflict", "icon": "⚡" },
+    "self-before": { "label": "Before", "icon": "🔮" },
+    "self-after": { "label": "After", "icon": "📝" }
+  },
+  "questions": {
+    "core-1": {
+      "question": "Why is this important to you?",
+      "explanation": "Surfaces personal motivation and emotional stakes beyond the rational argument."
+    },
+    "core-2": {
+      "question": "What is the core issue here?",
+      "explanation": "Forces prioritization. Cuts through symptoms to root causes."
+    },
+    "core-3": {
+      "question": "If you could only solve one thing, what would it be?",
+      "explanation": "Reveals true priority when everything feels urgent."
+    },
+    "core-4": {
+      "question": "What would change if we did nothing?",
+      "explanation": "Tests urgency and clarifies real consequences vs. assumed ones."
+    },
+    "core-5": {
+      "question": "What are you most worried about?",
+      "explanation": "Opens the emotional dimension of a seemingly rational discussion."
+    },
+    "core-6": {
+      "question": "What does success look like for you here?",
+      "explanation": "Aligns expectations before jumping into solutions."
+    },
+    "mirror-1": {
+      "question": "What I'm hearing is [X]. Is that right?",
+      "explanation": "Mirrors back. Shows you listened. Lets them correct or go deeper."
+    },
+    "mirror-2": {
+      "question": "You said [X]. Tell me more about that.",
+      "explanation": "Opens a door they may have only cracked. No judgment, just curiosity."
+    },
+    "mirror-3": {
+      "question": "What do you mean by [specific word]?",
+      "explanation": "Catches assumptions. Words like \"fair\", \"respect\", \"quality\" mean different things to different people."
+    },
+    "mirror-4": {
+      "question": "Can you give me an example?",
+      "explanation": "Moves from abstract to concrete. Reveals what someone actually experienced."
+    },
+    "mirror-5": {
+      "question": "How did that land with you?",
+      "explanation": "Invites emotional response without forcing it."
+    },
+    "mirror-6": {
+      "question": "What's the part you haven't said yet?",
+      "explanation": "Creates permission for the unsaid. Use with trust and care."
+    },
+    "space-1": {
+      "question": "[Silence — 5 seconds]",
+      "explanation": "Lets the other person process. Many people need a beat before they share something real."
+    },
+    "space-2": {
+      "question": "Take your time.",
+      "explanation": "Removes time pressure. Signals genuine interest."
+    },
+    "space-3": {
+      "question": "I'd like to understand this better.",
+      "explanation": "Positions you as learner, not judge. Disarms defensiveness."
+    },
+    "space-4": {
+      "question": "That sounds important. Say more.",
+      "explanation": "Validates without evaluating. Opens the door wider."
+    },
+    "space-5": {
+      "question": "I notice you paused there.",
+      "explanation": "Gently draws attention to a nonverbal cue. Use with warmth."
+    },
+    "space-6": {
+      "question": "Let me sit with that for a moment.",
+      "explanation": "Models reflective behavior. Shows that thinking before responding has value."
+    },
+    "meeting-open-1": {
+      "question": "What's the one thing we need to leave this room with?",
+      "explanation": "Creates shared focus. Prevents drift."
+    },
+    "meeting-open-2": {
+      "question": "What do you need from me today?",
+      "explanation": "Shifts from presenting to serving. Sets collaborative tone."
+    },
+    "meeting-open-3": {
+      "question": "Where are we stuck?",
+      "explanation": "Skips status updates. Goes straight to where value is added."
+    },
+    "meeting-during-1": {
+      "question": "Who haven't we heard from yet?",
+      "explanation": "Creates space for quieter voices. Models inclusive leadership."
+    },
+    "meeting-during-2": {
+      "question": "Are we solving the right problem?",
+      "explanation": "Recalibrates when discussion drifts into solution mode too early."
+    },
+    "meeting-during-3": {
+      "question": "What are we assuming here?",
+      "explanation": "Surfaces blind spots and groupthink."
+    },
+    "meeting-during-4": {
+      "question": "What would we do if we had half the time?",
+      "explanation": "Forces prioritization and reveals what's truly essential."
+    },
+    "oneonone-1": {
+      "question": "What's energizing you right now?",
+      "explanation": "Starts positive. Reveals what motivates this person."
+    },
+    "oneonone-2": {
+      "question": "What's draining you right now?",
+      "explanation": "Paired with the above: shows the full picture without leading."
+    },
+    "oneonone-3": {
+      "question": "What does support from me look like for you?",
+      "explanation": "Prevents assuming you know what they need."
+    },
+    "oneonone-4": {
+      "question": "Is there something we keep avoiding?",
+      "explanation": "Opens the door to difficult topics with shared ownership."
+    },
+    "oneonone-5": {
+      "question": "What would you do differently if it were entirely your call?",
+      "explanation": "Reveals hidden initiative, ownership, and trust levels."
+    },
+    "governance-1": {
+      "question": "What would the community say about this decision?",
+      "explanation": "Shifts from internal logic to external impact."
+    },
+    "governance-2": {
+      "question": "What's the concern behind the objection?",
+      "explanation": "Moves past positional disagreement to underlying needs."
+    },
+    "governance-3": {
+      "question": "Where do we agree? Let's start there.",
+      "explanation": "Finds common ground in polarized discussions."
+    },
+    "governance-4": {
+      "question": "What would we need to see to change our mind?",
+      "explanation": "Introduces intellectual humility and testable criteria."
+    },
+    "governance-5": {
+      "question": "Is this a decision or a discussion?",
+      "explanation": "Clarifies expectations. Prevents frustration on both sides."
+    },
+    "governance-6": {
+      "question": "Who else should be in this conversation?",
+      "explanation": "Checks for missing perspectives before committing."
+    },
+    "conflict-1": {
+      "question": "Help me understand where you're coming from.",
+      "explanation": "Non-confrontational. Opens dialogue when positions harden."
+    },
+    "conflict-2": {
+      "question": "What would need to happen for this to work for both of us?",
+      "explanation": "Shifts from win/lose to shared problem-solving."
+    },
+    "conflict-3": {
+      "question": "What's really at stake for you here?",
+      "explanation": "Goes beneath the position to the interest."
+    },
+    "conflict-4": {
+      "question": "I sense there's more here. Am I reading that right?",
+      "explanation": "Gently names the elephant. Gives permission to be honest."
+    },
+    "conflict-5": {
+      "question": "What would it take to rebuild trust here?",
+      "explanation": "Forward-looking. Moves from blame to repair."
+    },
+    "conflict-6": {
+      "question": "Can we pause and check: are we still on the same side?",
+      "explanation": "Resets the dynamic when conversation turns adversarial."
+    },
+    "self-before-1": {
+      "question": "What am I trying to achieve here?",
+      "explanation": "Clarifies your intention before you walk in."
+    },
+    "self-before-2": {
+      "question": "What does the other person need from this?",
+      "explanation": "Shifts perspective. Primes you for listening."
+    },
+    "self-before-3": {
+      "question": "Where am I likely to jump in too quickly?",
+      "explanation": "Pre-awareness of your pattern. Prepares the pause."
+    },
+    "self-after-1": {
+      "question": "Where did I listen well?",
+      "explanation": "Reinforces positive patterns."
+    },
+    "self-after-2": {
+      "question": "Where did I fill the silence?",
+      "explanation": "Honest check without judgment. Data for the log."
+    },
+    "self-after-3": {
+      "question": "What did I learn that surprised me?",
+      "explanation": "Captures insight. Rewards curiosity."
+    },
+    "self-after-4": {
+      "question": "What question do I wish I had asked?",
+      "explanation": "Builds your repertoire for next time."
+    }
+  }
+}
