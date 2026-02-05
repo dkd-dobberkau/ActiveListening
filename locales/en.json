@@ -25,7 +25,19 @@
     "deleteConfirm": "This action cannot be undone.",
     "questionsCount": "questions",
     "importSuccess": "set(s) imported",
-    "importError": "Import error: Invalid format"
+    "importError": "Import error: Invalid format",
+    "helpButton": "Help"
+  },
+  "help": {
+    "title": "How to use ActiveListening",
+    "browseTitle": "Browse Questions",
+    "browseText": "Use the arrow buttons or swipe left/right to navigate through questions. Each card shows a question and explains when to use it.",
+    "categoriesTitle": "Filter by Category",
+    "categoriesText": "Tap category chips to filter questions. You can select multiple categories. At least one must remain active.",
+    "setsTitle": "Meeting Sets",
+    "setsText": "Create custom sets of questions for specific meetings. Tap '+ Set' on any card to add it to a set. Access your sets via the menu button (☰).",
+    "exportTitle": "Export & Import",
+    "exportText": "Export your sets as JSON files to share or backup. Import sets from files to restore or share between devices."
   },
   "categories": {
     "core": { "label": "Core", "icon": "🎯" },

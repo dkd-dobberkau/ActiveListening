@@ -25,7 +25,19 @@
     "deleteConfirm": "Diese Aktion kann nicht rückgängig gemacht werden.",
     "questionsCount": "Fragen",
     "importSuccess": "Set(s) importiert",
-    "importError": "Importfehler: Ungültiges Format"
+    "importError": "Importfehler: Ungültiges Format",
+    "helpButton": "Hilfe"
+  },
+  "help": {
+    "title": "So nutzt du ActiveListening",
+    "browseTitle": "Fragen durchstöbern",
+    "browseText": "Nutze die Pfeiltasten oder wische nach links/rechts, um durch die Fragen zu navigieren. Jede Karte zeigt eine Frage und erklärt, wann sie eingesetzt werden kann.",
+    "categoriesTitle": "Nach Kategorie filtern",
+    "categoriesText": "Tippe auf Kategorie-Chips, um Fragen zu filtern. Du kannst mehrere Kategorien auswählen. Mindestens eine muss aktiv bleiben.",
+    "setsTitle": "Meeting-Sets",
+    "setsText": "Erstelle individuelle Fragensets für bestimmte Meetings. Tippe auf '+ Set' bei einer Karte, um sie zu einem Set hinzuzufügen. Deine Sets findest du über das Menü (☰).",
+    "exportTitle": "Export & Import",
+    "exportText": "Exportiere deine Sets als JSON-Dateien zum Teilen oder Sichern. Importiere Sets aus Dateien, um sie wiederherzustellen oder zwischen Geräten zu teilen."
   },
   "categories": {
     "core": {

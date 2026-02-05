@@ -25,7 +25,19 @@
     "deleteConfirm": "Denne handling kan ikke fortrydes.",
     "questionsCount": "spørgsmål",
     "importSuccess": "sæt(te) importeret",
-    "importError": "Importfejl: Ugyldigt format"
+    "importError": "Importfejl: Ugyldigt format",
+    "helpButton": "Hjælp"
+  },
+  "help": {
+    "title": "Sådan bruger du ActiveListening",
+    "browseTitle": "Gennemse spørgsmål",
+    "browseText": "Brug piletasterne eller swipe til venstre/højre for at navigere gennem spørgsmålene. Hvert kort viser et spørgsmål og forklarer, hvornår det kan bruges.",
+    "categoriesTitle": "Filtrer efter kategori",
+    "categoriesText": "Tryk på kategori-chips for at filtrere spørgsmål. Du kan vælge flere kategorier. Mindst én skal forblive aktiv.",
+    "setsTitle": "Mødesæt",
+    "setsText": "Opret tilpassede spørgsmålssæt til bestemte møder. Tryk på '+ Sæt' på et kort for at tilføje det til et sæt. Find dine sæt via menuknappen (☰).",
+    "exportTitle": "Eksport & Import",
+    "exportText": "Eksporter dine sæt som JSON-filer til deling eller backup. Importer sæt fra filer for at gendanne eller dele mellem enheder."
   },
   "categories": {
     "core": {

@@ -22,6 +22,7 @@ const elements = {
   btnPrev: document.getElementById('btn-prev'),
   btnNext: document.getElementById('btn-next'),
   btnSets: document.getElementById('btn-sets'),
+  btnHelp: document.getElementById('btn-help'),
   btnBack: document.getElementById('btn-back'),
   btnAddToSet: document.getElementById('btn-add-to-set'),
   btnNewSet: document.getElementById('btn-new-set'),
@@ -62,6 +63,7 @@ function updateUIText() {
 
   // Header
   elements.btnSets.setAttribute('aria-label', i18n.t('ui.setsButton'));
+  elements.btnHelp.setAttribute('aria-label', i18n.t('ui.helpButton'));
 
   // Navigation
   elements.btnPrev.setAttribute('aria-label', i18n.t('ui.prevButton'));
@@ -252,6 +254,27 @@ function hideModal() {
   modalCallback = null;
 }
 
+// Show help modal
+function showHelp() {
+  const helpContent = `
+    <div class="help-content">
+      <h4>${i18n.t('help.browseTitle')}</h4>
+      <p>${i18n.t('help.browseText')}</p>
+
+      <h4>${i18n.t('help.categoriesTitle')}</h4>
+      <p>${i18n.t('help.categoriesText')}</p>
+
+      <h4>${i18n.t('help.setsTitle')}</h4>
+      <p>${i18n.t('help.setsText')}</p>
+
+      <h4>${i18n.t('help.exportTitle')}</h4>
+      <p>${i18n.t('help.exportText')}</p>
+    </div>
+  `;
+
+  showModal(i18n.t('help.title'), helpContent, hideModal);
+}
+
 // Show add-to-set modal
 function showAddToSetModal() {
   const question = state.filteredQuestions[state.currentIndex];
@@ -374,6 +397,9 @@ function initEventListeners() {
   // Touch/Swipe
   elements.card.addEventListener('touchstart', handleTouchStart, { passive: true });
   elements.card.addEventListener('touchend', handleTouchEnd, { passive: true });
+
+  // Help
+  elements.btnHelp.addEventListener('click', showHelp);
 
   // View switching
   elements.btnSets.addEventListener('click', () => showView('sets'));
