@@ -78,6 +78,12 @@ body {
   border-color: var(--color-accent);
 }
 
+.lang-label {
+  font-size: 0.6rem;
+  margin-left: 0.1rem;
+  vertical-align: super;
+}
+
 /* Buttons */
 .btn-icon {
   background: none;

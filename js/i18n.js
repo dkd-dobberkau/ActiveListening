@@ -1,5 +1,5 @@
 // Internationalization module
-const SUPPORTED_LOCALES = ['en', 'de', 'da'];
+const SUPPORTED_LOCALES = ['en', 'de', 'de-du', 'da'];
 const DEFAULT_LOCALE = 'en';
 const STORAGE_KEY = 'activelistening_locale';
 

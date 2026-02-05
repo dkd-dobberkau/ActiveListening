@@ -43,13 +43,14 @@ const elements = {
 function renderLangSwitcher() {
   const locales = i18n.getLocales();
   const currentLocale = i18n.getLocale();
-  const flags = { en: '🇬🇧', de: '🇩🇪', da: '🇩🇰' };
+  const flags = { en: '🇬🇧', de: '🇩🇪', 'de-du': '🇩🇪', da: '🇩🇰' };
+  const labels = { en: '', de: 'Sie', 'de-du': 'Du', da: '' };
 
   elements.langSwitcher.innerHTML = locales.map(locale => `
     <button class="lang-btn ${locale === currentLocale ? 'active' : ''}"
             data-lang="${locale}"
             title="${locale.toUpperCase()}">
-      ${flags[locale] || locale.toUpperCase()}
+      ${flags[locale] || locale.toUpperCase()}${labels[locale] ? `<span class="lang-label">${labels[locale]}</span>` : ''}
     </button>
   `).join('');
 }
